@@ -58,28 +58,33 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 Button(
                     icon: Icon(Mdi.alphaC),
-                    button_function: () {
+                    callback: () {
                       //clear function
+                      ioh.clear();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric7),
-                    button_function: () {
+                    callback: () {
                       //numeric7 function
+                      ioh.numeric7();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric4),
-                    button_function: () {
+                    callback: () {
                       //numeric4 function
+                      ioh.numeric4();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric1),
-                    button_function: () {
+                    callback: () {
                       //numeric1 function
+                      ioh.numeric1();
                     }),
                 Button(
                     icon: Icon(Mdi.plusMinus),
-                    button_function: () {
-                      print('object');
+                    callback: () {
+                      //plusminus function
+                      ioh.plusMinus();
                     })
               ],
             ),
@@ -87,28 +92,33 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 Button(
                     icon: Icon(Mdi.pi),
-                    button_function: () {
+                    callback: () {
                       //pi function
+                      ioh.pi();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric8),
-                    button_function: () {
+                    callback: () {
                       //numeric8 function
+                      ioh.numeric8();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric5),
-                    button_function: () {
+                    callback: () {
                       //numeric5 function
+                      ioh.numeric5();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric2),
-                    button_function: () {
+                    callback: () {
                       //numeric2 function
+                      ioh.numeric2();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric0),
-                    button_function: () {
+                    callback: () {
                       //numeric0 function
+                      ioh.numeric0();
                     })
               ],
             ),
@@ -116,28 +126,33 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 Button(
                     icon: Icon(Mdi.backspace),
-                    button_function: () {
+                    callback: () {
                       //backspace function
+                      ioh.backspace();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric9),
-                    button_function: () {
+                    callback: () {
                       //numeric9 function
+                      ioh.numeric9();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric6),
-                    button_function: () {
+                    callback: () {
                       //numeric6 function
+                      ioh.numeric6();
                     }),
                 Button(
                     icon: Icon(Mdi.numeric3),
-                    button_function: () {
+                    callback: () {
                       //numeric3 function
+                      ioh.numeric3();
                     }),
                 Button(
                     icon: Icon(Mdi.circleSmall),
-                    button_function: () {
+                    callback: () {
                       //point function
+                      ioh.point();
                     })
               ],
             ),
@@ -145,21 +160,26 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 Button(
                     icon: Icon(Mdi.slashForwardBox),
-                    button_function: () {
+                    callback: () {
                       //divide function
+                      ioh.divide();
                     }),
                 Button(
                     icon: Icon(Mdi.closeBox),
-                    button_function: () {
+                    callback: () {
                       //multiply function
+                      ioh.multiply();
                     }),
                 Button(
                     icon: Icon(Mdi.minusBox),
-                    button_function: () {
+                    callback: () {
                       //minusplus function
+                      ioh.minus();
+                      print('-');
                     }),
-                Button(icon: Icon(Mdi.plusBox), button_function: ioh.plus),
-                Button(icon: Icon(Mdi.equalBox), button_function: ioh.equalsTo)
+                    //more clean way to pass void function callbacks.
+                Button(icon: Icon(Mdi.plusBox), callback: ioh.plus),
+                Button(icon: Icon(Mdi.equalBox), callback: ioh.equalsTo)
               ],
             )
           ])

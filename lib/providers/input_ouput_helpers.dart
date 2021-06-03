@@ -3,10 +3,10 @@ import 'dart:math' as Math;
 import 'package:math_expressions/math_expressions.dart';
 
 class InputOutputHelpers with ChangeNotifier {
-  num _result = 0.1;
+  num _result = 0.0;
   num get result => _result;
 
-  String _expression = '2*3-4/5';
+  String _expression = '';
   String get expression => _expression;
   set setExpression(String newExpression) {
     this._expression = this._expression + newExpression;
@@ -74,7 +74,7 @@ class InputOutputHelpers with ChangeNotifier {
   }
 
   void multiply() {
-    _expression = _expression + 'x';
+    _expression = _expression + '*';
     notifyListeners();
   }
 
