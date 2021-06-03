@@ -59,25 +59,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 Button(
                     icon: Icon(Mdi.alphaC),
                     button_function: () {
-                      //Cancel function
+                      //clear function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric7),
                     button_function: () {
-                      //Cancel function
+                      //numeric7 function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric4),
                     button_function: () {
-                      //Cancel function
+                      //numeric4 function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric1),
                     button_function: () {
-                      print('1');
-                      setState(() {
-                        ioh.setExpression = '+';
-                      });
+                      //numeric1 function
                     }),
                 Button(
                     icon: Icon(Mdi.plusMinus),
@@ -91,27 +88,27 @@ class _MyHomePageState extends State<MyHomePage> {
                 Button(
                     icon: Icon(Mdi.pi),
                     button_function: () {
-                      //Cancel function
+                      //pi function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric8),
                     button_function: () {
-                      //Cancel function
+                      //numeric8 function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric5),
                     button_function: () {
-                      //Cancel function
+                      //numeric5 function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric2),
                     button_function: () {
-                      //Cancel function
+                      //numeric2 function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric0),
                     button_function: () {
-                      //Cancel function
+                      //numeric0 function
                     })
               ],
             ),
@@ -120,27 +117,27 @@ class _MyHomePageState extends State<MyHomePage> {
                 Button(
                     icon: Icon(Mdi.backspace),
                     button_function: () {
-                      //Cancel function
+                      //backspace function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric9),
                     button_function: () {
-                      //Cancel function
+                      //numeric9 function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric6),
                     button_function: () {
-                      //Cancel function
+                      //numeric6 function
                     }),
                 Button(
                     icon: Icon(Mdi.numeric3),
                     button_function: () {
-                      //Cancel function
+                      //numeric3 function
                     }),
                 Button(
                     icon: Icon(Mdi.circleSmall),
                     button_function: () {
-                      //Cancel function
+                      //point function
                     })
               ],
             ),
@@ -149,17 +146,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 Button(
                     icon: Icon(Mdi.slashForwardBox),
                     button_function: () {
-                      //Cancel function
+                      //divide function
                     }),
                 Button(
                     icon: Icon(Mdi.closeBox),
                     button_function: () {
-                      //Cancel function
+                      //multiply function
                     }),
                 Button(
                     icon: Icon(Mdi.minusBox),
                     button_function: () {
-                      //Cancel function
+                      //minusplus function
                     }),
                 Button(icon: Icon(Mdi.plusBox), button_function: ioh.plus),
                 Button(icon: Icon(Mdi.equalBox), button_function: ioh.equalsTo)
